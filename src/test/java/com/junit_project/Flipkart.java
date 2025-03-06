@@ -88,6 +88,6 @@ static WebDriver driver;
 	
 	@AfterClass
 	public static void method6() {
-		driver.quit();
+		driver.close();
 	}
 }
