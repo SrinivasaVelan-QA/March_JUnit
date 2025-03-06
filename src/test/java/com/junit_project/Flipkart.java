@@ -28,7 +28,8 @@ static WebDriver driver;
 	    options.addArguments("disable-popups");
 	    driver = new EdgeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        driver.get("https://www.flipkart.com/");	
+        driver.get("https://www.flipkart.com/");
+        driver.manage().window().minimize();
 	}
 	@Test
 	public void method1() {
